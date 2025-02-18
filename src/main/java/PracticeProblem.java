@@ -16,8 +16,17 @@ public class PracticeProblem {
 	}
 
 	public static int min(int in1, int in2, int in3) {
-		int currMin = Math.min(in1, in2);
-		return Math.min(currMin, in3);
+		if (in1 < in2) {
+			if (in1 < in2) {
+				return in1;
+			}
+			return in2;
+		} else {
+			if (in2 < in3) {
+				return in2;
+			}
+			return in3;
+		}
 	}
 
 	public static boolean isLeapYear(int year) {
